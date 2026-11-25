@@ -1,15 +1,18 @@
 {
-  "name": "feishu-express-field-shortcut",
-  "version": "1.0.0",
+  "name": "feishu-express-assistant",
+  "version": "1.0.5",
   "private": true,
-  "description": "飞书多维表格快递物流查询字段捷径",
+  "description": "飞书多维表格「快递查询助手」字段捷径",
   "main": "index.js",
   "scripts": {
     "start": "block-basekit-cli start:field",
     "build": "block-basekit-cli build:field",
     "pack": "block-basekit-cli pack:field",
     "dev": "block-basekit-cli dev:field",
-    "test": "node -r ts-node/register test/index.ts"
+    "field:mock": "node scripts/field-published-mock.mjs",
+    "server": "node server/index.mjs",
+    "test": "node -r ts-node/register test/index.ts",
+    "server:install": "npm install --prefix server"
   },
   "license": "ISC",
   "devDependencies": {
